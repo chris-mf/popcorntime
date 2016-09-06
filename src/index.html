@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Popcorntime</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1.0">
+  <!--Place favicon.ico and apple-touch-icon.png in the root directory-->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <img src="img/popcorntime-logo.png" alt="Popcorntime logo">
+            <nav>
+                <a href="#current-flavour">Current Flavour</a>
+                <a href="">Past Flavours</a>
+                <a href="" class="button">Suggest a Flavour</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- This is the header section  -->
+    <section class="hero">
+        <div class="wrapper">
+            <div class="hero-text">
+                <h1>Popcorntime</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit, est ac aliquam ultricies, lorem magna feugiat ex, eget ultrices odio nulla suscipit purus. Mauris nec purus tellus.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- THis is the current flavour section -->
+    <section id="current-flavour" class="current-flavour">
+        <div class="wrapper">
+            <h1>Current flavour</h1>
+            <div class="flavour-information">
+                <div class="flavour-text">
+                    <h2>“Alex macadamia nut”</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit, est ac aliquam ultricies.</p>
+                </div>
+                <div class="flavour-image">
+                    <img src="img/Alex_Mac_Image.jpg" alt="alex macadamia nut">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Past flavour carousel -->
+    <section id="past-flavours" class="past-flavours">
+        <div class="wrapper">
+            <h1>Past Flavours</h1>
+        </div>
+
+        <div class="carousel">
+            <div class="flavour-card">
+                <img src="img/Past_flavour_Placeholder.jpg" alt="past flavour image" />
+                <h3>"Past flavour 1"</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit, est ac aliquam ultricies.</p>
+            </div>
+
+            <div class="flavour-card">
+                <img src="img/Past_flavour_Placeholder.jpg" alt="past flavour image" />
+                <h3>"Past flavour 2"</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit, est ac aliquam ultricies.</p>
+            </div>
+
+            <div class="flavour-card">
+                <img src="img/Past_flavour_Placeholder.jpg" alt="past flavour image" />
+                <h3>"Past flavour 3"</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit, est ac aliquam ultricies.</p>
+            </div>
+
+            <div class="flavour-card">
+                <img src="img/Past_flavour_Placeholder.jpg" alt="past flavour image" />
+                <h3>"Past flavour 4"</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit, est ac aliquam ultricies.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="request-flavour" class="request-flavour">
+        <div class="wrapper">
+            <h1>Request a flavour</h1>
+            <form>
+                <label>Your name</label>
+                <input type="text" name="your-name" placeholder="Your name"></imput>
+                <label>Flavour title</label>
+                <input type="text" name="flavour-title" placeholder="flavour name" />
+                <label>List of ingredients</label>
+                <textarea type="text" name="ingredient-list" rows="5"></textarea>
+                <a type="submit" class="button">Submit</a>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper">
+            MF labs project
+            <a href="">View more lab work</a>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
