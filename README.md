@@ -42,7 +42,19 @@ One task is available:
 $ gulp
 ```
 
+
+
+
+
 Running `gulp` will start a Browsersync server, build and optimize assets then start a watch task.
 
 * * *
 # popcorntime
+
+## What to actually do
+Open terminal
+type: cd (make sure there is a space after cd)
+Drag popcorntime folder into terminal
+Hit enter
+type: gulp
+// you're done 
