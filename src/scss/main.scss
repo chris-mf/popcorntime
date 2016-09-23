@@ -92,6 +92,12 @@ h2 {
   color: #131E32;
 }
 
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
 h2 {
   font-size: 2.1875em;
   line-height: 1.5625em;
@@ -101,6 +107,12 @@ h2 {
     max-width: 1000px;
     margin: 0 auto;
 }
+
+.narrow-wrapper{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
 
 header {
   // height: 160px;
@@ -250,4 +262,52 @@ nav a {
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+
+
+.hero-text h1
+{
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+// flavour-card Styling - Carousel - See Slick carousel for .js options
+
+.flavour-card {
+  border: 1px solid #131E32;
+  margin-left: 25px;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.flavour-card-inner {
+  height: 390px;
+  width: 350px;
+}
+
+.flavour-card-inner img {
+margin: 0 auto;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+text {
+  margin: 50px
+}
+
+// Form Styling
+
+input{
+    border: 1px solid #131E32;
+    margin: 20px;
+    height: 50px;
+    width: 100%;
+    display: block;
+  }
+
+
+
+button{
+  margin: 50px;
 }

@@ -4,12 +4,10 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     $('.carousel').slick({
-        infinite: true,
- slidesToShow: 3,
- slidesToScroll: 3,
- arrows: false,
- autoplay: true,
-
-      });
+ speed: 300,
+ slidesToShow: 1,
+ variableWidth: true,
+ arrows: false
+});
 
 }, false);
