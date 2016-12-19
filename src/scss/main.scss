@@ -306,6 +306,14 @@ input{
   display: block;
 }
 
-button{
-  margin: 50px;
+textarea{  border: 1px solid #131E32;
+  margin: 20px;
+  height: 50px;
+  width: 100%;
+  display: block;
+}
+
+button {
+  text-align: center;
+
 }
