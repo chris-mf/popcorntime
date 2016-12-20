@@ -59,3 +59,11 @@ type: gulp
 
 
 Running `gulp` will start a Browsersync server, build and optimize assets then start a watch task.
+
+
+#how to commit to Github
+Github desktop
+Summary
+Description - optional
+Commit
+Sync
