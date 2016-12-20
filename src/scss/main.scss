@@ -66,8 +66,7 @@
     }
 }
 // Imports
-@import 'helpers/reset';
-//  @import '../../node_modules/jeet/scss/jeet/jeet';
+@import 'helpers/reset'; //  @import '../../node_modules/jeet/scss/jeet/jeet';
 // @include edit();
 // Variables
 $font-stack: 'MaisonNeue-Book', Helvetica, Arial, sans-serif;
@@ -80,14 +79,11 @@ $max-width-large: 1024px;
 $max-width-medium: 768px;
 $max-width-small: 400px;
 $header-color: #0ff; // Typography
-
-
 // Training wheels - comment out when done
-
 * {
-    // outline: 1px dotted rgba(0,0,0,0.5);
-    // background-color: rgba(0,0,0,0.1);
-    // box-sizing: border-box;
+//     outline: 1px dotted rgba(0,0,0,0.5);
+//     background-color: rgba(0,0,0,0.1);
+    box-sizing: border-box;
 }
 
 body {
@@ -107,11 +103,6 @@ h2 {
     color: #131E32;
 }
 
-h1 {
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
 
 h2 {
     font-size: 2.1875em;
@@ -119,23 +110,21 @@ h2 {
 }
 
 h4 {
-  font-family: 'MaisonNeue-bold', Helvetica, Arial, sans-serif;
-  font-size: 1.875em;
-  line-height: .5em;
-  color: #11282E;
-
+    font-family: 'MaisonNeue-bold', Helvetica, Arial, sans-serif;
+    font-size: 1.875em;
+    line-height: 0.5em;
+    color: #11282E;
 }
 
 .side-heading {
-  font-family: 'MaisonNeue-regular', Helvetica, Arial, sans-serif;
-  font-size: 1.5625em;
-  line-height: .5em;
-  color: #11282E;
-  transform: rotate(-90deg);
-  position: absolute; left: 0;
-
+    font-family: 'MaisonNeue-regular', Helvetica, Arial, sans-serif;
+    font-size: 1.5625em;
+    line-height: 0.5em;
+    color: #11282E;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 0;
 }
-
 
 .wrapper {
     max-width: 1000px;
@@ -146,10 +135,7 @@ h4 {
     max-width: 500px;
     margin: 0 auto;
 }
-
-
 // Navigation Section
-
 header {
     width: 100%;
     padding-top: 50px;
@@ -188,15 +174,10 @@ nav a {
     display: inline-block;
 }
 
-
-
 section {
     margin: 0;
 }
-
 // Header section
-
-
 .hero {
     height: 600px;
     background-color: #4FB2EC;
@@ -205,25 +186,21 @@ section {
     .wrapper {
         position: relative;
         height: 100%;
-
-
     }
 }
 
-
-.popcorn-illustration{
-  position: absolute;
-  bottom: 150px;
-  left:70%;
-  transform: translateX(-50%);
+.popcorn-illustration {
+    position: absolute;
+    bottom: 150px;
+    left: 70%;
+    transform: translateX(-50%);
 }
 
-.down-arrow{
-
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
+.down-arrow {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .hero-text {
@@ -241,24 +218,16 @@ section {
 }
 
 .hero-text h4::before {
- content: '';
- display: block;
- width: 60px;
- height: 4px;
- background-color: #F15B5C;
- position: absolute;
- top: -40px;
- left: 0px;
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #F15B5C;
+    position: absolute;
+    top: -40px;
+    left: 0;
 }
-
-
 // current-flavour section
-
-
-
-
-
-
 .current-flavour {
     height: 600px;
 
@@ -266,191 +235,92 @@ section {
         text-align: center;
         margin-top: 100px;
         margin-bottom: 100px;
-
     }
 }
 
-.shadow-box{
-  background-color:#ffffff;
-  border-radius: 7px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.09), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
-  margin: 10px;
-  height: 600px;
-  width: 1130px;
-  margin-top: 45px;
-}
-
-
-.flavour-information{
-  overflow: auto;
-}
-
-.flavour-text{
-  width: 50%;
-  float: left;
-}
-
-.stars-image{
-  margin-top: 25px;
+.shadow-box {
+    background-color: #ffffff;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.09), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
+    margin: 50px 100px 0 100px;
+    padding: 100px;
+    // height: 600px;
+    // width: 1130px;
 
 }
 
-.ingredients-title{
-  font-family: 'MaisonNeue-bold', Helvetica, Arial, sans-serif;
-  font-size: .95em;
-  line-height: 5em;
-  color: #11282E;
+.current-flavour {
+    // need help here
 }
 
-
-.flavour-image{
-  width: 50%;
-  float: left;
+.flavour-information {
+    overflow: auto;
 }
 
-
-/* Slider */
-.slick-slider {
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -ms-touch-action: pan-y;
-    touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.slick-list {
-    position: relative;
-    overflow: hidden;
-    display: block;
-    margin: 0;
-    padding: 0;
-
-    &:focus {
-        outline: none;
-    }
-
-    &.dragging {
-        cursor: pointer;
-        cursor: hand;
-    }
-}
-
-.slick-slider .slick-list,
-.slick-slider .slick-track {
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}
-
-.slick-track {
-    position: relative;
-    left: 0;
-    top: 0;
-    display: block;
-
-    &:after,
-    &:before {
-        content: "";
-        display: table;
-    }
-
-    &:after {
-        clear: both;
-    }
-
-    .slick-loading & {
-        visibility: hidden;
-    }
-}
-
-.slick-slide {
+.flavour-text {
+    width: 50%;
     float: left;
-    height: 100%;
-    min-height: 1px;
-
-    [dir="rtl"] & {
-        float: right;
-    }
-
-    img {
-        display: block;
-    }
-
-    &.slick-loading img {
-        display: none;
-    }
-    display: none;
-
-    &.dragging img {
-        pointer-events: none;
-    }
-
-    .slick-initialized & {
-        display: block;
-    }
-
-    .slick-loading & {
-        visibility: hidden;
-    }
-
-    .slick-vertical & {
-        display: block;
-        height: auto;
-        border: 1px solid transparent;
-    }
 }
 
-.slick-arrow.slick-hidden {
-    display: none;
+.stars-image {
+    margin-top: 25px;
 }
 
-.hero-text h1 {
-    text-align: left;
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
-// flavour-card Styling - Carousel - See Slick carousel for .js options
-
-.flavour-card {
-    border: 1px solid #131E32;
-    margin-left: 25px;
-    background-color: #fafafa;
-    text-align: center;
-}
-
-.flavour-card-inner {
-    height: 390px;
+.divder-line {
     width: 350px;
+    height: 2px;
+    background-color: solid-black;
 }
 
-.flavour-card-inner img {
-    margin: 50px auto;
+.ingredients-circle {
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+    border-radius: 100px;
+    border: 5px;
+    border-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.09), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
+    float: left;
 }
 
-text {
-    margin: 50px;
+.ingredients-title {
+    font-family: 'MaisonNeue-bold', Helvetica, Arial, sans-serif;
+    font-size: 0.95em;
+    line-height: 5em;
+    color: #11282E;
 }
+
+.flavour-image {
+    width: 50%;
+    float: left;
+}
+
+
+// How to request
+.how-to-request{
+  background-color: #4D71D3;
+  height:620px;
+}
+
+
+
+
+
+
+
+
 // Form Styling
-
 form {
     // overflow: auto;
 }
 
 input,
 textarea {
-    border: 1px solid #131E32;
+    border: 1px solid #EEEEEE;
     margin: 20px 0;
     padding: 20px 5px;
     width: 100%;
+    border-radius: 2px;
     display: block;
 }
 
@@ -468,9 +338,11 @@ footer a {
 
 .button {
     display: inline-block;
-    padding: 20px;
+    padding: 20px 70px;
     overflow: auto;
-    border: 1px solid #000;
+    background-color: #4FB2EC;
+    color: #ffffff;
+    border-radius: 100px;
     margin: 0;
     line-height: 1em;
     vertical-align: middle;
