@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
   <meta charset="UTF-8">
   <title>Popcorntime</title>
@@ -8,123 +9,109 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 </head>
+
 <body>
-    <header>
-        <div class="wrapper">
-            <img src="img/popcorntime-logo.png" alt="Popcorntime logo">
-            <nav>
-                <a href="#current-flavour">Current Flavour</a>
-                <a href="">Past Flavours</a>
-                <a href="" class="button">Suggest a Flavour</a>
-            </nav>
+
+  <!-- nav -->
+
+  <header>
+    <div class="wrapper">
+      <img src="img/popcorn-logo-white.png" alt="Popcorntime logo">
+      <nav>
+        <a href="#current-flavour">Current Flavour</a>
+        <a href="#how-to-request">How to request</a>
+        <a href="#request-flavour" class="nav-button">Suggest a Flavour</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- This is the header section  -->
+
+  <section class="hero">
+    <div class="wrapper">
+      <div class="hero-text">
+        <h4>Time to make some</h4>
+        <h1>Popcorn</h1>
+      </div>
+    </div>
+    <img class="popcorn-illustration" src="img/popcorn-illustration.png" alt="popcorn-illustration" />
+    <img class="down-arrow" src="img/down-arrow.png" alt="down arrow">
+  </section>
+
+
+  <!-- Current flavour section -->
+
+  <section id="current-flavour" class="current-flavour">
+    <div class="shadow-box shadow-top">
+      <div class="wrapper">
+
+        <div class="heading-container">
+          <div class="side-heading">Current flavour</div>
         </div>
-    </header>
-
-    <!-- This is the header section  -->
-    <section class="hero">
-        <div class="wrapper">
-            <div class="hero-text">
-                <h1>Popcorntime</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit, est ac aliquam ultricies, lorem magna feugiat ex, eget ultrices odio nulla suscipit purus. Mauris nec purus tellus.</p>
-            </div>
+        <div class="flavour-information">
+          <div class="flavour-image">
+            <img src="img/Alex_Mac_Image.png" alt="alex macadamia nut">
+          </div>
+          <div class="flavour-text">
+            <h2>The Marcel</h2>
+            <p>A rarely made black raspberry popcorn with mouth</p>
+            <p>watering chocolate covered almonds.</p>
+            <img class="stars-image" src="img/stars.png" alt="stars">
+            <div class="divder-line"></div>
+            <div class="ingredients-title">Ingredients</div>
+            <div class="ingredients-circle"> <img src="img/ingredient-1.png" alt="ingredient-1" /></div>
+            <div class="ingredients-circle"><img src="img/ingredient-2.png" alt="ingredient-2" /></div>
+            <div class="ingredients-circle"><img src="img/ingredient-3.png" alt="ingredient-3" /></div>
+          </div>
         </div>
-    </section>
-
-    <!-- THis is the current flavour section -->
-    <section id="current-flavour" class="current-flavour">
-        <div class="wrapper">
-            <h1>Current flavour</h1>
-            <div class="flavour-information">
-                <div class="flavour-text">
-                    <h2>“Rob new flavour”</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit, est ac aliquam ultricies.</p>
-                </div>
-                <div class="flavour-image">
-                    <img src="img/Alex_Mac_Image.jpg" alt="alex macadamia nut">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Past flavour carousel -->
-    <section id="past-flavours" class="past-flavours">
-        <div class="wrapper">
-            <h1>Past Flavours</h1>
-        </div>
-
-        <div class="carousel">
-          <div class="flavour-card">
-            <div class="flavour-card-inner">
-              <img src="img/Past_flavour_Placeholder.jpg" alt="past flavour image" />
-              <h3>Past flavour 4</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit, est ac aliquam ultricies.</p>
-              </div>
-            </div>
-
-            <div class="flavour-card">
-              <div class="flavour-card-inner">
-                <img src="img/Past_flavour_Placeholder.jpg" alt="past flavour image" />
-                <h3>Past flavour 4</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit, est ac aliquam ultricies.</p>
-              </div>
-            </div>
-
-            <div class="flavour-card">
-              <div class="flavour-card-inner">
-                <img src="img/Past_flavour_Placeholder.jpg" alt="past flavour image" />
-                <h3>Past flavour 4</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit, est ac aliquam ultricies.</p>
-              </div>
-            </div>
-
-            <div class="flavour-card">
-              <div class="flavour-card-inner">
-                <img src="img/Past_flavour_Placeholder.jpg" alt="past flavour image" />
-                <h3>Past flavour 4</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit, est ac aliquam ultricies.</p>
-
-              </div>
-            </div>
+      </div>
+    </div>
+  </section>
 
 
-            <div class="flavour-card">
-              <div class="flavour-card-inner">
-                <img src="img/Past_flavour_Placeholder.jpg" alt="past flavour image" />
-                <h3>Past flavour 4</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit, est ac aliquam ultricies.</p>
-                </div>
-              </div>
+  <!-- How to request -->
 
-              <div class="flavour-card">
-                <div class="flavour-card-inner">
-                  <img src="img/Past_flavour_Placeholder.jpg" alt="past flavour image" />
-                  <h3>Past flavour 4</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit, est ac aliquam ultricies.</p>
-                  </div>
-                </div>
+  <section id="how-to-request" class="how-to-request">
+    <div class="wrapper">
+      <div class="side-heading">How to request</div>
+    </div>
 
-        </div>
-    </section>
 
-    <section id="request-flavour" class="request-flavour">
-        <div class="narrow-wrapper">
-            <h1>Request a flavour</h1>
-            <form>
-                <label>Your name</label>
-                <input type="text" name="your-name" placeholder="Your name"></imput>
-                <label>Flavour title</label>
-                <input type="text" name="flavour-title" placeholder="flavour name" />
-                <label>List of ingredients</label>
-                <textarea type="text" name="ingredient-list" rows="5"></textarea>
-                <a type="submit" class="button">Submit</a>
-            </form>
-        </div>
-    </section>
-    <footer>
-        <div class="wrapper">
-            MF labs project
-            <a href="">View more lab work</a>
-        </div>
+  </section>
+
+
+  <!-- Request a flavour form -->
+
+  <section id="request-flavour" class="request-flavour">
+    <div class="shadow-box shadow-bottom">
+      <div class="narrow-wrapper">
+        <div class="side-heading">Request a flavour</div>
+        <form>
+          <label>Your name</label>
+          <input type="text" name="your-name" placeholder="Your name"></imput>
+          <label>Flavour title</label>
+          <input type="text" name="flavour-title" placeholder="flavour name" />
+          <label>List of ingredients</label>
+          <textarea type="text" name="ingredient-list" rows="10"></textarea>
+          <div class="center">
+            <a type="submit" class="button">Request</a>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer section -->
+  <section id="footer-section" class="footer-section">
+    <footer class="footer">
+      <div class="wrapper">
+        MF labs project
+        <a href="http://beta.mentallyfriendly.com/" target="_blank">View more lab work</a>
+      </div>
     </footer>
     <script src="js/app.js"></script>
+  </section>
 </body>

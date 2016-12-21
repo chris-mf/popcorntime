@@ -63,7 +63,8 @@ gulp.task('jshint', function() {
 // Images
 gulp.task('images', function() {
     return gulp.src(config.images.src)
-    .pipe(cache(
+    // .pipe(cache(
+    .pipe(
       imagemin({
         optimizationLevel: 3,
         progressive: true,
@@ -74,7 +75,8 @@ gulp.task('images', function() {
         use: [
           pngquant()
       ]
-    })))
+    // })))
+    }))
     .pipe(gulp.dest(config.images.dest));
 });
 

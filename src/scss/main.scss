@@ -80,9 +80,10 @@ $max-width-medium: 768px;
 $max-width-small: 400px;
 $header-color: #0ff; // Typography
 // Training wheels - comment out when done
+
 * {
-//     outline: 1px dotted rgba(0,0,0,0.5);
-//     background-color: rgba(0,0,0,0.1);
+    // outline: 1px dotted rgba(0,0,0,0.5);
+    // background-color: rgba(0,0,0,0.1);
     box-sizing: border-box;
 }
 
@@ -92,7 +93,8 @@ body {
     line-height: 1.5625em;
     color: #131E32;
     margin: 0;
-    background-color: #FAFAFA;
+    background: linear-gradient(to bottom, #4fb2ec 0%,#4d71d3 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 h1,
@@ -102,7 +104,6 @@ h2 {
     line-height: 1.5625em;
     color: #131E32;
 }
-
 
 h2 {
     font-size: 2.1875em;
@@ -116,14 +117,38 @@ h4 {
     color: #11282E;
 }
 
+.heading-container {
+    position: relative;
+}
+
 .side-heading {
     font-family: 'MaisonNeue-regular', Helvetica, Arial, sans-serif;
-    font-size: 1.5625em;
+    font-size: 1.2em;
     line-height: 0.5em;
     color: #11282E;
-    transform: rotate(-90deg);
+    transform: rotate(-90deg) translateX(-140%) translateY(-1300%);
     position: absolute;
+    // left: 100px;
+    // top: 45%;
+}
+// red line
+
+.side-heading::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #F15B5C;
+    position: absolute;
+    top: -20px;
     left: 0;
+}
+
+.hero-text {
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 100%;
 }
 
 .wrapper {
@@ -136,11 +161,12 @@ h4 {
     margin: 0 auto;
 }
 // Navigation Section
+
 header {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: #4FB2EC;
+    // background-color: #4FB2EC;
     margin: 0;
 }
 
@@ -158,18 +184,18 @@ nav a {
     color: #ffffff;
     margin-right: 50px;
     vertical-align: middle;
-    font-family: 'MaisonNeue-bold', Helvetica, Arial, sans-serif;
-    font-size: 1em;
+    font-family: 'MaisonNeue-medium', Helvetica, Arial, sans-serif;
+    font-size: 0.90em;
     font-kerning: 5.5;
 }
 
 .nav-button {
-    padding: 20px;
+    padding: 10px;
     border-width: 1px;
     border: 1px solid #ffffff;
     background-color: rgba(255,255,255,0.12);
     border-radius: 100px;
-    padding: 15px 20px;
+    padding: 15px 30px;
     overflow: auto;
     display: inline-block;
 }
@@ -178,9 +204,10 @@ section {
     margin: 0;
 }
 // Header section
+
 .hero {
     height: 600px;
-    background-color: #4FB2EC;
+    // background-color: #4FB2EC;
     position: relative;
 
     .wrapper {
@@ -191,7 +218,7 @@ section {
 
 .popcorn-illustration {
     position: absolute;
-    bottom: 150px;
+    bottom: 275px;
     left: 70%;
     transform: translateX(-50%);
 }
@@ -228,9 +255,9 @@ section {
     left: 0;
 }
 // current-flavour section
-.current-flavour {
-    height: 600px;
 
+.current-flavour {
+    // height: 0px;
     h1 {
         text-align: center;
         margin-top: 100px;
@@ -242,16 +269,24 @@ section {
     background-color: #ffffff;
     border-radius: 7px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.09), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
-    margin: 50px 100px 0 100px;
     padding: 100px;
-    // height: 600px;
-    // width: 1130px;
-
+    position: relative;
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.current-flavour {
-    // need help here
+.shadow-top {
+    margin-top: 40px;
+    margin-bottom: -75px;
 }
+
+.shadow-bottom {
+    margin-top: -75px;
+    margin-bottom: 0;
+}
+
+.current-flavour {}
 
 .flavour-information {
     overflow: auto;
@@ -267,9 +302,10 @@ section {
 }
 
 .divder-line {
-    width: 350px;
-    height: 2px;
-    background-color: solid-black;
+    width: 70%;
+    height: 1px;
+    margin-top: 25px;
+    background-color: #EDEDED;
 }
 
 .ingredients-circle {
@@ -277,10 +313,18 @@ section {
     height: 90px;
     margin: 10px;
     border-radius: 100px;
-    border: 5px;
-    border-color: #ffffff;
+    border: 3px solid #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.09), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
     float: left;
+    overflow: hidden;
+}
+
+.ingredients-circle img {
+    display: block;
+    max-width: 200px;
+    max-height: 90px;
+    width: auto;
+    height: auto;
 }
 
 .ingredients-title {
@@ -295,21 +339,17 @@ section {
     float: left;
 }
 
-
-// How to request
-.how-to-request{
-  background-color: #4D71D3;
-  height:620px;
+.flavour-image img {
+    display: block;
+    margin: 0 auto;
 }
-
-
-
-
-
-
-
-
+// How to request
+.how-to-request {
+    // background-color: #4D71D3;
+    height: 620px;
+}
 // Form Styling
+
 form {
     // overflow: auto;
 }
@@ -318,7 +358,10 @@ input,
 textarea {
     border: 1px solid #EEEEEE;
     margin: 20px 0;
-    padding: 20px 5px;
+    padding: 20px;
+    font-family: 'MaisonNeue-regular', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 0.5em;
     width: 100%;
     border-radius: 2px;
     display: block;
@@ -334,11 +377,15 @@ textarea {
 
 footer a {
     float: right;
+    font-family: 'MaisonNeue-regular', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 0.5em;
+    color: #ffffff;
 }
 
 .button {
     display: inline-block;
-    padding: 20px 70px;
+    padding: 20px 100px;
     overflow: auto;
     background-color: #4FB2EC;
     color: #ffffff;
@@ -346,4 +393,9 @@ footer a {
     margin: 0;
     line-height: 1em;
     vertical-align: middle;
+}
+
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
