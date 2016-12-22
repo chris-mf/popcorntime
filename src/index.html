@@ -16,12 +16,14 @@
 
   <header>
     <div class="wrapper">
-      <img src="img/popcorn-logo-white.png" alt="Popcorntime logo">
-      <nav>
-        <a href="#current-flavour">Current Flavour</a>
-        <a href="#how-to-request">How to request</a>
-        <a href="#request-flavour" class="nav-button">Suggest a Flavour</a>
-      </nav>
+      <div class="normal-section">
+        <img src="img/popcorn-logo-white.png" alt="Popcorntime logo">
+        <nav>
+          <a href="#current-flavour">Current Flavour</a>
+          <a href="#how-to-request">How to request</a>
+          <a href="#request-flavour" class="nav-button hvr-grow">Request a Flavour</a>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -30,43 +32,48 @@
 
   <section class="hero">
     <div class="wrapper">
-      <div class="hero-text">
-        <h4>Time to make some</h4>
-        <h1>Popcorn</h1>
+      <div class="normal-section">
+        <div class="hero-text">
+          <h4>Time to make some</h4>
+          <h1>Popcorn</h1>
+        </div>
       </div>
+      <img class="popcorn-illustration" src="img/popcorn-illustration.png" alt="popcorn-illustration" />
+      <img class="down-arrow" src="img/down-arrow.png" alt="down arrow">
     </div>
-    <img class="popcorn-illustration" src="img/popcorn-illustration.png" alt="popcorn-illustration" />
-    <img class="down-arrow" src="img/down-arrow.png" alt="down arrow">
   </section>
 
 
   <!-- Current flavour section -->
 
   <section id="current-flavour" class="current-flavour">
-    <div class="shadow-box shadow-top">
-      <div class="wrapper">
+
+    <div class="wrapper">
+      <div class="box-section">
 
         <div class="heading-container">
           <div class="side-heading">Current flavour</div>
         </div>
+
         <div class="flavour-information">
           <div class="flavour-image">
             <img src="img/Alex_Mac_Image.png" alt="alex macadamia nut">
           </div>
           <div class="flavour-text">
             <h2>The Marcel</h2>
+            <img class="stars-image" src="img/stars.png" alt="stars">
             <p>A rarely made black raspberry popcorn with mouth</p>
             <p>watering chocolate covered almonds.</p>
-            <img class="stars-image" src="img/stars.png" alt="stars">
-            <div class="divder-line"></div>
             <div class="ingredients-title">Ingredients</div>
             <div class="ingredients-circle"> <img src="img/ingredient-1.png" alt="ingredient-1" /></div>
             <div class="ingredients-circle"><img src="img/ingredient-2.png" alt="ingredient-2" /></div>
             <div class="ingredients-circle"><img src="img/ingredient-3.png" alt="ingredient-3" /></div>
           </div>
         </div>
+
       </div>
     </div>
+
   </section>
 
 
@@ -74,33 +81,70 @@
 
   <section id="how-to-request" class="how-to-request">
     <div class="wrapper">
-      <div class="side-heading">How to request</div>
+
+      <div class="normal-section">
+
+        <div class="heading-container">
+          <div class="side-heading">How to request</div>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <img src="img/step1.png" alt="step1" />
+            <div class="caption">Request a flavour</div>
+
+            <div class="step-number">
+              1
+            </div>
+          </div>
+          <div class="step">
+            <img src="img/step2.png" alt="step2" />
+              <div class="caption">Best flavour wins</div>
+            <div class="step-number">
+              2
+            </div>
+          </div>
+          <div class="step">
+            <img src="img/step3.png" alt="step3" />
+            <div class="caption">Popcorn at next book club</div>
+            <div class="step-number">
+              3
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
     </div>
-
-
   </section>
 
 
   <!-- Request a flavour form -->
 
   <section id="request-flavour" class="request-flavour">
-    <div class="shadow-box shadow-bottom">
-      <div class="narrow-wrapper">
-        <div class="side-heading">Request a flavour</div>
-        <form>
-          <label>Your name</label>
-          <input type="text" name="your-name" placeholder="Your name"></imput>
-          <label>Flavour title</label>
-          <input type="text" name="flavour-title" placeholder="flavour name" />
-          <label>List of ingredients</label>
-          <textarea type="text" name="ingredient-list" rows="10"></textarea>
-          <div class="center">
-            <a type="submit" class="button">Request</a>
-          </div>
+    <div class="wrapper">
+      <div class="box-section">
+        <div class="heading-container">
+          <div class="side-heading">How to request</div>
+        </div>
+        <div class="form-wrapper">
+          <form action="https://formspree.io/chris@mentallyfriendly.com"
+      method="POST">
+            <label>Your name</label>
+            <input type="text" name="your-name" placeholder="Your name"></imput>
+            <label>Flavour title</label>
+            <input type="text" name="flavour-title" placeholder="flavour name" />
+            <label>List of ingredients</label>
+            <textarea type="text" name="ingredient-list" rows="10"></textarea>
+            <div class="center">
+              <a type="submit" class="button hvr-grow " value="Send">Request</a>
+            </div>
 
-        </form>
+          </form>
+        </div>
       </div>
     </div>
+
   </section>
 
 
@@ -108,7 +152,8 @@
   <section id="footer-section" class="footer-section">
     <footer class="footer">
       <div class="wrapper">
-        MF labs project
+        <div class="footer-text"</div>
+        This is a MF Lab Project
         <a href="http://beta.mentallyfriendly.com/" target="_blank">View more lab work</a>
       </div>
     </footer>

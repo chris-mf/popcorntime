@@ -57,6 +57,11 @@ Hit enter
 type: gulp
 // you're done
 
+## How to cancel and reset gulp
+Type control
+Type Gulp again
+// Your'e done
+
 
 Running `gulp` will start a Browsersync server, build and optimize assets then start a watch task.
 
