@@ -116,7 +116,12 @@ h4 {
     line-height: 2em;
     color: #524A4C;
 }
+
+
+
+
 // Animations
+
 .hvr-grow {
     display: inline-block;
     vertical-align: middle;
@@ -142,6 +147,7 @@ h4 {
     transform: scale(1.05);
 }
 // wrapper
+
 .wrapper {
     max-width: 1240px;
     margin: 0 auto;
@@ -165,6 +171,7 @@ h4 {
     position: relative;
 }
 // side headings
+
 .heading-container {
     position: absolute;
     top: 50%;
@@ -191,6 +198,7 @@ h4 {
     background-color: #ffffff;
 }
 // red line
+
 .side-heading::before {
     content: '';
     display: block;
@@ -209,6 +217,7 @@ h4 {
     width: 100%;
 }
 // Navigation Section
+
 header {
     width: 100%;
     padding-top: 50px;
@@ -373,7 +382,6 @@ section {
 }
 
 .flavour-image {
-
     padding-top: 85px;
     padding-left: 75px;
 }
@@ -413,6 +421,7 @@ section {
     // display: inline-block;
 }
 // Form Styling
+
 form {
     // overflow: auto;
 }
@@ -428,11 +437,12 @@ textarea {
     width: 100%;
     border-radius: 2px;
     display: block;
+    resize: none;
 }
 
 input:focus,
 textarea:focus {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.03), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.03), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
     border: 2px solid #F2706D;
     padding: 20px;
     outline: none;
@@ -440,21 +450,11 @@ textarea:focus {
     // // transform:  scale(1.05);
     // // transform: matrix(5);
 }
-
-
-
-// box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-// backface-visibility: hidden;
-// -moz-osx-font-smoothing: grayscale;
-
-// input[type=text]:focus, textarea:focus {
-//   @include box-shadow(0 0 5px rgba(81, 203, 500, 1));
-//   padding: 3px 0px 3px 3px;
-//   margin: 5px 1px 3px 0px;
-//   border: 1px solid rgba(81, 203, 238, 1);
+// input:required, textarea:required {
+//     background: #FC6247 no-repeat 98% center;
 // }
 
-textarea {
+.setc textarea {
     resize: none;
 }
 
@@ -469,6 +469,10 @@ footer a {
     line-height: 0.5em;
     color: #ffffff;
     text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
 }
 
 .button {
@@ -490,6 +494,7 @@ button.button {
     color: #ffffff;
     text-decoration: none;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .footer-text {
@@ -497,19 +502,40 @@ button.button {
     font-size: 1em;
     line-height: 0.5em;
     color: #ffffff;
+
+}
+
+
+.textarea {
+    resize: none;
 }
 
 .footer {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
+.nav-text:hover {
+    text-decoration: underline;
+}
+
+
 @media only screen and (max-width: 700px) {
+    .popcorn-illustration {
+        margin: 100%;
+        width: 25%;
+    }
+
     .flavour-information div {
         width: 100%;
     }
 
-.flavour-image img {
-    width: 100%;
-}
+    .flavour-image img {
+        width: auto;
+    }
 
+    .ingredients-title div {
+        display: block;
+        margin: 0 auto;
+    }
 }

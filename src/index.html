@@ -20,7 +20,7 @@
         <img src="img/popcorn-logo-white.png" alt="Popcorntime logo">
         <nav>
           <a href="#current-flavour" class="nav-text">Current Flavour</a>
-          <a href="#how-to-request" class="nav-text" >How to request</a>
+          <a href="#how-to-request" class="nav-text">How to request</a>
           <a href="#request-flavour" class="nav-button hvr-grow">Request a Flavour</a>
         </nav>
       </div>
@@ -39,7 +39,7 @@
         </div>
       </div>
       <img class="popcorn-illustration" src="img/popcorn-illustration.png" alt="popcorn-illustration" />
-      <img class="down-arrow" src="img/down-arrow.png" alt="down arrow">
+      <img class="down-arrow #request-flavour" src="img/down-arrow.png" alt="down arrow">
     </div>
   </section>
 
@@ -98,7 +98,7 @@
           </div>
           <div class="step">
             <img src="img/step2.png" alt="step2" />
-              <div class="caption">Best flavour wins</div>
+            <div class="caption">Best flavour wins</div>
             <div class="step-number">
               2
             </div>
@@ -128,16 +128,15 @@
           <div class="side-heading">How to request</div>
         </div>
         <div class="form-wrapper">
-          <form action="https://formspree.io/chris@mentallyfriendly.com"
-      method="POST">
+          <form action="https://formspree.io/chris@mentallyfriendly.com" method="POST">
             <label>Your name</label>
-            <input type="text" name="your-name" placeholder="Put yo name here"></imput>
+            <input type="text" name="your-name" placeholder="Put yo name here" required></imput>
             <label>Flavour title</label>
-            <input type="text" name="Flavour-title" placeholder="Make it cool" />
+            <input type="text" name="Flavour-title" placeholder="Make it cool" required />
             <label>List of ingredients</label>
-            <textarea type="text" name="ingredient-list" placeholder="Nothing gross" rows="10"></textarea>
+            <textarea type="text" name="ingredient-list" placeholder="Nothing gross" rows="10" required></textarea>
             <div class="center">
-              <button type="submit" class="button hvr-grow" value="Send">Request</button>
+              <button type="submit" class="button hvr-grow" value="Send">Send</button>
             </div>
 
           </form>
@@ -153,9 +152,9 @@
     <footer class="footer">
       <div class="wrapper">
         <div class="footer-text"</div>
-        This is a MF Lab Project
-        <a href="http://beta.mentallyfriendly.com/" target="_blank">View more lab work</a>
-      </div>
+          MF Lab Project
+          <a href="http://beta.mentallyfriendly.com/" target="_blank">View more lab work</a>
+        </div>
     </footer>
     <script src="js/app.js"></script>
   </section>
