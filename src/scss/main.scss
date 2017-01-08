@@ -133,40 +133,36 @@ h4 {
     // // // -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     // // box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
-
 /* Underline Reveal */
 @mixin underline-reveal {
-	$duration: $mediumDuration;
+    $duration: $mediumDuration;
+    @include hacks();
+    position: relative;
+    overflow: hidden;
 
-	@include hacks();
-	position: relative;
-	overflow: hidden;
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $activeColor;
+        height: 4px;
+        @include prefixed(transform, translateY(4px));
+        @include prefixed(transition-property, transform);
+        @include prefixed(transition-duration, $duration);
+        @include prefixed(transition-timing-function, ease-out);
+    }
 
-	&:before {
-		content: "";
-		position: absolute;
-		z-index: -1;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background: $activeColor;
-		height: 4px;
-		@include prefixed(transform, translateY(4px));
-		@include prefixed(transition-property, transform);
-		@include prefixed(transition-duration, $duration);
-		@include prefixed(transition-timing-function, ease-out);
-	}
-
-	&:hover,
-	&:focus,
-	&:active {
-
-		&:before {
-			@include prefixed(transform, translateY(0));
-		}
-	}
+    &:active,
+    &:focus,
+    &:hover {
+        &:before {
+            @include prefixed(transform, translateY(0));
+        }
+    }
 }
-
 
 .nav-text:hover {
     transform: scale(1.5);
@@ -539,36 +535,59 @@ footer a {
     line-height: 0.5em;
     color: #ffffff;
     text-decoration: none;
-
 }
-
-
 
 footer a:hover {
-    text-decoration: underline
+    text-decoration: underline;
 }
-
-
-
 //Mobile nav
-
 .nav-mobile {
-  display:none; /* Hide from browsers that don't support media queries */
-  cursor:pointer;
-  position:absolute;
-  top:0;
-  right:0;
-  background:#34495E url(img/nav-mobile.svg) no-repeat center center;
-  height:40px;
-  width:40px;
-  border-radius:5px;
-  -webkit-border-radius:5px;
-  -moz-border-radius:5px;
+    display: none;
+    /* Hide from browsers that don't support media queries */
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #34495E url("img/nav-mobile.svg") no-repeat center center;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
 }
 
-
+#nav-toggle {
+    float:right;
+    display: none;
+    font-size: 40px;
+}
 
 @media only screen and (max-width: 700px) {
+
+    nav {
+        position:fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.29);
+        height:100%;
+        padding:40px;
+        z-index: 100000000;
+    }
+
+    #nav-toggle {
+        display: block;
+        z-index: 100000000000;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+
+    nav a {
+        width: 100%;
+        float: left;
+        padding: 20px
+    }
+
     .popcorn-illustration {
         margin: 100%;
         width: 25%;
@@ -578,20 +597,47 @@ footer a:hover {
         width: 100%;
     }
 
+    .flavour-image {
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    .steps {
+        padding: 80px 0;
+    }
+
+    .step {
+        margin-bottom: 40px;
+    }
+
     .flavour-image img {
-        width: auto;
+        width: 100%;
     }
 
     .ingredients-title div {
-        width: 200px; float: left;
+        width: 200px;
+        float: left;
     }
 
     .steps div {
-        width: 100%
+        width: 100%;
     }
 
     .step div {
         // margin-top: 5px;
     }
+
+    .hero-text h1 {
+        font-size: 55px;
+    }
+
+    .normal-section, .box-section {
+        padding: 40px;
+    }
+
+.hero-top {
+    height: 400px;
+}
+
 
 }
