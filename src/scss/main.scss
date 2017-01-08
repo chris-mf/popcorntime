@@ -541,6 +541,7 @@ footer a:hover {
     text-decoration: underline;
 }
 //Mobile nav
+
 .nav-mobile {
     display: none;
     /* Hide from browsers that don't support media queries */
@@ -557,20 +558,18 @@ footer a:hover {
 }
 
 #nav-toggle {
-    float:right;
+    float: right;
     display: none;
     font-size: 40px;
 }
-
 @media only screen and (max-width: 700px) {
-
     nav {
-        position:fixed;
+        position: fixed;
         top: 0;
         left: 0;
         background-color: rgba(0, 0, 0, 0.29);
-        height:100%;
-        padding:40px;
+        height: 100%;
+        padding: 40px;
         z-index: 100000000;
     }
 
@@ -585,7 +584,7 @@ footer a:hover {
     nav a {
         width: 100%;
         float: left;
-        padding: 20px
+        padding: 20px;
     }
 
     .popcorn-illustration {
@@ -593,13 +592,17 @@ footer a:hover {
         width: 25%;
     }
 
-    .flavour-information div {
+    .flavour-information > div {
         width: 100%;
     }
 
     .flavour-image {
         padding-left: 0;
         padding-top: 0;
+    }
+
+    .flavour-image {
+        padding-top: 30px;
     }
 
     .steps {
@@ -614,30 +617,56 @@ footer a:hover {
         width: 100%;
     }
 
-    .ingredients-title div {
-        width: 200px;
-        float: left;
-    }
-
     .steps div {
         width: 100%;
     }
 
     .step div {
-        // margin-top: 5px;
+        margin-top: 5px;
     }
 
     .hero-text h1 {
         font-size: 55px;
     }
 
-    .normal-section, .box-section {
+    .box-section,
+    .normal-section {
         padding: 40px;
     }
 
-.hero-top {
-    height: 400px;
-}
+    .hero {
+        height: 400px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 
 
+    .header-nav {
+        height: 100px;
+    }
+
+    header {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .flavour-text {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .heading-container {
+        position: relative;
+        transform: translateY(0%);
+        top: 0;
+        left: 0;
+        padding-top: 35px;
+        padding-bottom: 50px;
+    }
+
+    .side-heading {
+        transform: rotate(0deg);
+        position: relative;
+        // padding-top: 20px;
+    }
 }
