@@ -73,6 +73,9 @@ Description - optional
 Commit
 Sync
 
+#how to view on Mobile
+10.1.0.48:8888
+
 
 
 #how to find em
