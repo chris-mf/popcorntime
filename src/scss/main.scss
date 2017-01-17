@@ -113,9 +113,9 @@ h2 {
 
 h4 {
     font-family: 'MaisonNeue-mono', Helvetica, Arial, sans-serif;
-    font-size: 1.4em;
+    font-size: 1.3em;
     line-height: 2em;
-    color: #524A4C;
+    color: #ffffff;
 }
 // Animations
 
@@ -312,6 +312,7 @@ section {
     bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
+
 }
 
 .hero-text {
@@ -353,11 +354,12 @@ section {
     content: '';
     display: block;
     width: 60px;
-    height: 2px;
+    height: 4px;
     background-color: #ffffff;
     position: absolute;
     top: -20px;
     left: 0;
+    border-radius: 5px;
 }
 // current-flavour section
 
