@@ -49,7 +49,9 @@ $ gulp
 
 # popcorntime
 
-## What to actually do
+Running `gulp` will start a Browsersync server, build and optimize assets then start a watch task.
+
+## What to do
 Open terminal
 type: cd (make sure there is a space after cd)
 Drag popcorntime folder into terminal
@@ -60,10 +62,7 @@ type: gulp
 ## How to cancel and reset gulp
 Type control
 Type Gulp again
-// Your'e done
-
-
-Running `gulp` will start a Browsersync server, build and optimize assets then start a watch task.
+// You're done
 
 
 #how to commit to Github

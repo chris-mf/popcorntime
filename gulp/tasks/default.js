@@ -49,7 +49,7 @@ gulp.task('scsslint', function() {
 // Scripts
 gulp.task('scripts', function() {
     return gulp.src(config.scripts.src)
-    .pipe(concat('app.js'))
+    // .pipe(concat('app.js'))
     .pipe(uglify())
     .pipe(gulp.dest(config.scripts.dest))
     .pipe(size());

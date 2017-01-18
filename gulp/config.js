@@ -1,5 +1,5 @@
 var src         = 'src';
-var dist        = 'dist'; 
+var dist        = 'dist';
 
 module.exports = {
   overlord: dist + '/**/*.{js,html}',
@@ -35,7 +35,7 @@ module.exports = {
   },
   scripts: {
     src: [
-      src + '/js/app.js'
+      src + '/js/*'
     ],
     dest: dist + '/js',
     name: 'app.js'
