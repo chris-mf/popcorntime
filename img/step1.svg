@@ -1,1 +1,33 @@
-<svg width="138" height="138" viewBox="0 0 138 138" xmlns="http://www.w3.org/2000/svg"><title>Step1</title><g fill="none" fill-rule="evenodd"><path d="M.337.667h140v140h-140z"/><path d="M18.195 93.467H119.227a3.179 3.179 0 0 0 3.177-3.177V48.984a3.177 3.177 0 0 0-3.178-3.178H18.196a3.174 3.174 0 0 0-3.178 3.178V90.29a3.177 3.177 0 0 0 3.177 3.177z" fill="#F48C8A"/><path d="M10.694 100.154h6.354v6.706l10.137-6.706h84.54a3.179 3.179 0 0 0 3.177-3.177V55.67a3.177 3.177 0 0 0-3.177-3.178H10.694a3.174 3.174 0 0 0-3.178 3.178v41.306a3.177 3.177 0 0 0 3.178 3.177z" stroke="#FFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><g stroke="#FFF" stroke-width="4" stroke-linecap="round"><path d="M38.2 71.115h23.245M49.187 81.186H62.36M38.2 81.186h4.935M68.764 71.115h3.874M79.957 71.115h3.874M67.795 81.186h11.622"/></g><g stroke-linecap="round" stroke-width="3.5" stroke="#FFF" stroke-linejoin="round"><path d="M128.016 47.869h4.289M122.15 39.534v-4.288M129.15 40.92l6.319-5.443"/></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="138px" height="138px" viewBox="0 0 138 138" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Step1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Step1">
+            <g id="Speech">
+                <rect id="Rectangle-7-Copy" x="0.336631373" y="0.666992188" width="140" height="140"></rect>
+                <g transform="translate(7.250718, 34.000000)">
+                    <path d="M10.9447308,59.46716 L17.299529,59.46716 L27.4362059,59.46716 L111.975704,59.46716 C113.729628,59.46716 115.153103,58.0436852 115.153103,56.2897609 L115.153103,14.9835727 C115.153103,13.226471 113.729628,11.8061736 111.975704,11.8061736 L10.9447308,11.8061736 C9.18762906,11.8061736 7.76733167,13.226471 7.76733167,14.9835727 L7.76733167,56.2897609 C7.76733167,58.0436852 9.18762906,59.46716 10.9447308,59.46716 Z" id="Stroke-13-Copy" fill="#F48C8A"></path>
+                    <path d="M3.44290277,66.1542516 L9.79770095,66.1542516 L9.79770095,72.8603694 L19.9343779,66.1542516 L104.473876,66.1542516 C106.2278,66.1542516 107.651275,64.7307768 107.651275,62.9768525 L107.651275,21.6706643 C107.651275,19.9135626 106.2278,18.4932652 104.473876,18.4932652 L3.44290277,18.4932652 C1.68580107,18.4932652 0.265503673,19.9135626 0.265503673,21.6706643 L0.265503673,62.9768525 C0.265503673,64.7307768 1.68580107,66.1542516 3.44290277,66.1542516 Z" id="Stroke-13" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <g id="Group-8" transform="translate(29.296094, 34.789111)" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round">
+                        <path d="M1.65405188,2.32625215 L24.8979626,2.32625215" id="Line"></path>
+                        <path d="M12.640087,12.3967844 L25.8134656,12.3967844" id="Line-Copy-4"></path>
+                        <path d="M1.65405188,12.3967844 L6.58790403,12.3967844" id="Line-Copy-6"></path>
+                        <path d="M32.2169542,2.32625215 L36.0909393,2.32625215" id="Line"></path>
+                        <path d="M43.4099309,2.32625215 L47.283916,2.32625215" id="Line-Copy-2"></path>
+                        <path d="M31.2484579,12.3967844 L42.8704133,12.3967844" id="Line-Copy-10"></path>
+                    </g>
+                    <g id="Group-4" transform="translate(114.899194, 0.514004)" stroke-linecap="round" stroke-width="3.5" stroke="#FFFFFF" stroke-linejoin="round">
+                        <g id="Group-5">
+                            <path d="M8.01065063,15.4988309 L8.01065063,11.2106319" id="Line" transform="translate(8.010651, 13.354731) rotate(-270.000000) translate(-8.010651, -13.354731) "></path>
+                            <path d="M0,5.02026032 L0,0.732061317" id="Line-Copy"></path>
+                            <path d="M6.99920957,6.40540372 L13.3188984,0.96323319" id="Line"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

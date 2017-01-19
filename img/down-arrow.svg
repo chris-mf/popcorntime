@@ -1,1 +1,23 @@
-<svg width="15" height="8" viewBox="0 0 15 8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Forward_000000_-1</title><defs><path id="a" d="M.988.014l-.62.619L6.33 6.594.368 12.556l.62.619 6.58-6.58z"/><mask id="b" x="-.5" y="-.5" width="8.2" height="14.161"><path fill="#fff" d="M-.132-.486h8.2v14.161h-8.2z"/><use xlink:href="#a"/></mask></defs><g transform="rotate(90 7.16 7.105)" fill="none" fill-rule="evenodd"><use fill="#FFF" xlink:href="#a"/><use stroke="#FFF" mask="url(#b)" stroke-linecap="round" stroke-linejoin="round" xlink:href="#a"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="8px" viewBox="0 0 15 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Forward_000000_-1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.987643217 0.0135339355 0.368388672 0.63278848 6.32986899 6.5942688 0.368388672 12.5557491 0.987643217 13.1750037 7.56837808 6.5942688"></polygon>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-0.5" y="-0.5" width="8.19998941" height="14.1614697">
+            <rect x="-0.131611328" y="-0.486466064" width="8.19998941" height="14.1614697" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Template" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dribble_Post_800x600_Popcorn-Copy" transform="translate(-387.000000, -481.000000)">
+            <g id="Forward_000000_-1" transform="translate(394.265000, 484.945312) rotate(-270.000000) translate(-394.265000, -484.945312) translate(390.265000, 477.945312)">
+                <g id="Shape">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

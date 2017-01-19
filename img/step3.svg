@@ -1,1 +1,29 @@
-<svg width="138" height="138" viewBox="0 0 138 138" xmlns="http://www.w3.org/2000/svg"><title>Step3</title><g fill="none" fill-rule="evenodd"><path d="M1.234-2.419h140v140h-140z"/><g transform="translate(38.734 20.58)"><path d="M63.896 26.487c0-11.739-11.416-12.437-15.438-6.246-3.06-13.992-23.164-14.056-26.238 0-4.042-6.211-15.438-5.459-15.438 6.246" fill="#F48D8A"/><g stroke-width="3.5"><path stroke="#FFF" stroke-linejoin="round" d="M4.033 89.781L.673 36.027h57.114l-3.36 53.754z"/><path d="M57.787 29.308c0-11.739-11.416-12.437-15.437-6.246-3.06-13.992-23.165-14.056-26.239 0C12.07 16.851.674 17.603.674 29.308" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round"/><path d="M14.065 34.37l4.79 57.468M43.4 34.37L38.61 91.839" stroke="#F2706D" stroke-linecap="square"/></g><path d="M10.166 85.035l-3.36-53.754H63.92l-3.36 53.754z" fill="#FFF" opacity=".203"/><ellipse fill="#FFF" cx="5.304" cy="10.726" rx="1.479" ry="1.479"/><ellipse fill="#FFF" cx="36.302" cy="4.567" rx=".929" ry=".929"/><ellipse fill="#FFF" cx="21.585" cy="2.412" rx="2.154" ry="2.154"/></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="138px" height="138px" viewBox="0 0 138 138" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Step3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Step3">
+            <g transform="translate(1.000000, -3.000000)">
+                <rect id="Rectangle-7-Copy-3" x="0.233766421" y="0.580771251" width="140" height="140"></rect>
+                <g id="Book-Club" transform="translate(37.733766, 23.580771)">
+                    <path d="M63.8958653,26.4869885 C63.8958653,14.7484866 52.4798867,14.0496863 48.4584251,20.2414604 C45.397814,6.24865553 25.2938657,6.18482281 22.2198161,20.2414604 C18.1781969,14.0295286 6.78237591,14.7820828 6.78237591,26.4869885" id="Stroke-1191" fill="#F48D8A"></path>
+                    <g id="Group-8-Copy" transform="translate(0.246474, 12.205292)" stroke-width="3.5">
+                        <polygon id="Stroke-1180" stroke="#FFFFFF" stroke-linejoin="round" points="3.78694709 77.5757784 0.427330061 23.821906 57.5408195 23.821906 54.1812025 77.5757784"></polygon>
+                        <path d="M57.5408195,17.1026719 C57.5408195,5.36417004 46.1248408,4.6653697 42.1033793,10.8571439 C39.0427681,-3.13566103 18.9388199,-3.19949376 15.8647703,10.8571439 C11.823151,4.645212 0.427330061,5.39776621 0.427330061,17.1026719" id="Stroke-1191" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M13.818746,22.1656186 L18.6076651,79.6326472" id="Line" stroke="#F2706D" stroke-linecap="square"></path>
+                        <path d="M38.3644798,22.1656186 L43.1533988,79.6326472" id="Line-Copy-2" stroke="#F2706D" stroke-linecap="square" transform="translate(40.758939, 50.899133) scale(-1, 1) translate(-40.758939, -50.899133) "></path>
+                    </g>
+                    <g id="Group-11" transform="translate(6.782376, 31.220399)" fill="#FFFFFF" opacity="0.202615489">
+                        <polygon id="Stroke-1180" points="3.38353797 53.8145964 0.023920946 0.0607240062 57.1374104 0.0607240062 53.7777933 53.8145964"></polygon>
+                    </g>
+                    <ellipse id="Oval-3" fill="#FFFFFF" cx="5.30353009" cy="10.7264462" rx="1.47884582" ry="1.47884582"></ellipse>
+                    <ellipse id="Oval-3-Copy-2" fill="#FFFFFF" cx="36.3020064" cy="4.56651415" rx="0.928611196" ry="0.928611196"></ellipse>
+                    <ellipse id="Oval-3-Copy" fill="#FFFFFF" cx="21.5847946" cy="2.41227097" rx="2.15424318" ry="2.15424318"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

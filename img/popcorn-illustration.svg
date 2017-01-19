@@ -1,1 +1,28 @@
-<svg width="132" height="189" viewBox="0 0 132 189" xmlns="http://www.w3.org/2000/svg"><title>Group</title><g transform="translate(2)" fill="none" fill-rule="evenodd"><path d="M129.62 53.732c0-23.813-23.159-25.23-31.317-12.67-6.209-28.386-46.992-28.515-53.228 0C36.876 28.46 13.76 29.987 13.76 53.732" fill="#F48D8A"/><g stroke-width="5"><path stroke="#FFF" stroke-linejoin="round" d="M8.182 182.13L1.367 73.086h115.86l-6.815 109.046z"/><path d="M117.228 59.454c0-23.812-23.159-25.23-31.317-12.67-6.208-28.385-46.992-28.515-53.228 0-8.198-12.6-31.316-11.074-31.316 12.67" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round"/><path d="M28.533 69.725l9.715 116.578M88.041 69.725l-9.714 116.578" stroke="#F2706D" stroke-linecap="square"/></g><path d="M20.623 172.503L13.807 63.457h115.861l-6.815 109.046z" fill="#FFF" opacity=".203"/><circle fill="#FFF" cx="10.759" cy="21.76" r="3"/><circle fill="#FFF" cx="73.643" cy="9.264" r="1.884"/><circle fill="#FFF" cx="43.787" cy="4.894" r="4.37"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="132px" height="189px" viewBox="0 0 132 189" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Popcorn-time" transform="translate(-838.000000, -315.000000)">
+            <g id="Group" transform="translate(840.000000, 315.000000)">
+                <g id="Group-14">
+                    <path d="M129.61973,53.7317442 C129.61973,29.9189132 106.461172,28.5013205 98.303199,41.0620095 C92.0944157,12.6760791 51.3113645,12.5465874 45.0753198,41.0620095 C36.8764544,28.4604284 13.7587891,29.9870667 13.7587891,53.7317442" id="Stroke-1191" fill="#F48D8A"></path>
+                    <g id="Group-8-Copy" transform="translate(0.500000, 24.759766)" stroke-width="5">
+                        <polygon id="Stroke-1180" stroke="#FFFFFF" stroke-linejoin="round" points="7.68223508 157.370925 0.866885622 48.3253337 116.727826 48.3253337 109.912477 157.370925"></polygon>
+                        <path d="M116.727826,34.6946348 C116.727826,10.8818038 93.5692689,9.46421113 85.4112956,22.0249002 C79.2025122,-6.3610303 38.4194611,-6.49052194 32.1834164,22.0249002 C23.984551,9.42331903 0.866885622,10.9499573 0.866885622,34.6946348" id="Stroke-1191" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M28.0328331,44.9653741 L37.7476776,161.543508" id="Line" stroke="#F2706D" stroke-linecap="square"></path>
+                        <path d="M77.8265303,44.9653741 L87.5413748,161.543508" id="Line-Copy-2" stroke="#F2706D" stroke-linecap="square" transform="translate(82.683953, 103.254441) scale(-1, 1) translate(-82.683953, -103.254441) "></path>
+                    </g>
+                    <g id="Group-11" transform="translate(13.758789, 63.333984)" fill="#FFFFFF" opacity="0.202615489">
+                        <polygon id="Stroke-1180" points="6.8638757 109.168777 0.0485262473 0.123185268 115.909467 0.123185268 109.094117 109.168777"></polygon>
+                    </g>
+                    <circle id="Oval-3" fill="#FFFFFF" cx="10.7587891" cy="21.7597656" r="3"></circle>
+                    <circle id="Oval-3-Copy-2" fill="#FFFFFF" cx="73.6425781" cy="9.26367188" r="1.88378906"></circle>
+                    <circle id="Oval-3-Copy" fill="#FFFFFF" cx="43.7871094" cy="4.89355469" r="4.37011719"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
