@@ -710,21 +710,39 @@ footer a:hover {
         // padding-top: 20px;
     }
 
+
     .footer {
-        position: absolute;
-        padding: 50px 25px;
-        vertical-align: middle;
         text-align: center;
     }
 
-    .footer-link {
-        padding-top: 35px;
-        line-height: 25px;
+    .footer a {
+        margin-top: 2em;
+        line-height: 1.8em;
+        float: none;
+        display: block;
     }
 
-    .button {
+    // .footer {
+    //     // position: absolute;
+    //     padding: 50px 25px;
+    //     vertical-align: middle;
+    //     text-align: center;
+    //     display: inline-block;
+    // }
+    //
+    // .footer a {
+    //     padding-top: 35px;
+    //     line-height: 25px;
+    //     padding-left: 50
+    //
+    // }
+    //
+    // .footer-link {
+    //     padding-top: 35px;
+    //     line-height: 25px;
+    //     text-align: center;
+    // }
 
-    }
 
 }
 @media only screen and (max-width: 900px) {
