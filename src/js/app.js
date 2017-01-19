@@ -8,14 +8,16 @@
 
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
+
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top
         }, 700);
-        return false;
+        // return false;
       }
     }
   });
@@ -44,7 +46,23 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 $(document).on("ready", function() {
-    $(".hero-text").addClass("bounceInDown")
+    $(".hero-text").addClass("bounceInDown");
+
+    $('#nav-burger').on('click', function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      console.log('burger clicked!');
+      $('#main-nav').addClass('open');
+    });
+
+    // $('#nav-burger a').on('click', function(e){
+    //   $('#main-nav').removeClass('open');
+    // });
+
+    $('body').on('click', function(){
+      console.log('menu closed');
+      $('#main-nav').removeClass('open');
+    });
 })
 
 $(document).on("ready", function() {

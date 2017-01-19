@@ -207,7 +207,7 @@ h4 {
 
 .normal-section {
     padding: 0 100px;
-    position: relative;
+    // position: relative;
 }
 
 .box-section {
@@ -321,6 +321,10 @@ section {
         position: relative;
         height: 100%;
     }
+}
+
+.nav-burger {
+    display: none;
 }
 
 .popcorn-illustration {
@@ -468,6 +472,7 @@ section {
     float: right;
 }
 // How to request
+
 .steps {
     overflow: auto;
     padding: 200px 0;
@@ -550,10 +555,8 @@ button.button {
     cursor: pointer;
     margin-top: 10px;
     text-align: center;
-}
-
-#contact-form .button {
-    width: 280px;
+    width: 60%;
+    display: inline-block;
 }
 
 .footer-text {
@@ -612,160 +615,205 @@ footer a:hover {
 // }
 // Mobile design
 
-
-
-@media only screen and (max-width: 950px) {
-    .flavour-image img {
-        margin: 0 auto;
-        position: absolute;
-        top: 50%;
-        left: 2%;
-        display: block;
-        // margin-top: -50px;
-        transform: translateY(-50%);
-    }
+.close-button {
+    display: none;
 }
 
-    .flavour-information .flavour-text {
-        float: right;
-    }
-
-
-
-@media only screen and (max-width: 900px) {
-        nav {
-            float: none;
-        }
-
-        nav a {
-            text-align: center;
-            float: inherit;
-            width: 80%;
-            padding: 20px;
-            display: block;
-        }
-
-        .popcorn-illustration {
-            display: none;
-        }
-    }
-
-
-
+.flavour-information .flavour-text {
+    float: right;
+}
 @media only screen and (max-width: 479px) {
-
-
     .flavour-image img {
-        position: relative;;
-        top: 0%;
-        left: 0%;
+        position: relative;
+        top: 0;
+        left: 0;
         display: block;
         transform: none;
         width: 100%;
         margin-bottom: 5%;
     }
 
+    button.button {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 700px) {
+
+    .popcorn-illustration {
+        margin: 100%;
+        width: 25%;
+    }
+
+    .flavour-information > div {
+        width: 100%;
+        float: none;
+    }
+
+    .flavour-image img {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+        transform: none;
+        width: 65%;
+        margin-bottom: 5%;
+    }
+
+    .steps {
+        padding: 30px 0;
+    }
+
+    .step {
+        margin-bottom: 40px;
+    }
+
+    .steps div {
+        width: 100%;
+    }
+
+    .step div {
+        margin-top: 5px;
+    }
+
+    .hero-text h1 {
+        font-size: 55px;
+    }
+
+    .box-section,
+    .normal-section {
+        padding: 50px;
+    }
+
+    .hero {
+        height: 400px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .flavour-text {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .heading-container {
+        position: relative;
+        transform: translateY(0%);
+        top: 0;
+        left: 0;
+        padding-top: 35px;
+        padding-bottom: 50px;
+    }
+
+    .side-heading {
+        transform: rotate(0deg);
+        position: relative;
+        // padding-top: 20px;
+    }
+
+    .footer {
+        position: absolute;
+        padding: 50px 25px;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .footer-link {
+        padding-top: 35px;
+        line-height: 25px;
+    }
+
+    .button {
+
+    }
 
 }
+@media only screen and (max-width: 900px) {
+    .nav-burger {
+        height: auto;
+        width: 45px;
+        float: right;
+        display: block;
+    }
 
+    nav {
+        float: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        transform: translateY(-100%);
+        transition: all 0.2s ease;
+        box-shadow: rgba(0, 0, 0, 0.0901961) 0 4px 8px 0px, rgba(0, 0, 0, 0.0470588) 0 6px 20px 0;
+    }
+
+    nav.open {
+        transform: translateY(0%);
+    }
+
+    nav a {
+        text-align: center;
+        float: inherit;
+        width: 80%;
+        padding: 20px;
+        display: block;
+        margin: 0 auto;
+        color: #F2706D;
+        font-size: 1.2em;
+    }
+
+    .close-button {
+        display: none;
+        height: auto;
+        width: 35px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%,210%);
+    }
+
+    nav.open .close-button {
+        display: block;
+    }
+
+    .hvr-grow {
+        display: block;
+        vertical-align: middle;
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        transition-duration: 0.21s;
+        transition-property: transform;
+        // transition: all 0.21s cubic-bezier(0.55, 0, 0.1, 1);
+        // // -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        // // // -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        // // box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+
+    nav a:last-child {
+        margin-right: auto;
+    }
+
+    .popcorn-illustration {
+        display: none;
+    }
+}
+// @media only screen and (max-width: 950px) {
+//     .flavour-image img {
+//         margin: 0 auto;
+//         // position: absolute;
+//         top: 50%;
+//         left: 2%;
+//         display: block;
+//         // margin-top: -50px;
+// //         transform: translateY(-50%);
+//     }
+// }
 @media only screen and (max-width: 1240px) {
     .footer {
-        padding:40px 30px;
+        padding: 40px 30px;
     }
 }
-
-
-    @media only screen and (max-width: 700px) {
-        .popcorn-illustration {
-            margin: 100%;
-            width: 25%;
-        }
-
-        .flavour-information > div {
-            width: 100%;
-            float: none;
-        }
-
-
-        .flavour-image img {
-            position: relative;;
-            top: 0%;
-            left: 0%;
-            display: block;
-            transform: none;
-            width: 65%;
-            margin-bottom: 5%;
-        }
-
-
-        .steps {
-            padding: 30px 0;
-        }
-
-        .step {
-            margin-bottom: 40px;
-        }
-
-        // .flavour-image img {
-        //     width: 100%;
-        // }
-
-        .steps div {
-            width: 100%;
-        }
-
-        .step div {
-            margin-top: 5px;
-        }
-
-        .hero-text h1 {
-            font-size: 55px;
-        }
-
-        .box-section,
-        .normal-section {
-            padding: 50px;
-        }
-
-        .hero {
-            height: 400px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-
-        .flavour-text {
-            padding-top: 40px;
-            padding-bottom: 40px;
-        }
-
-        .heading-container {
-            position: relative;
-            transform: translateY(0%);
-            top: 0;
-            left: 0;
-            padding-top: 35px;
-            padding-bottom: 50px;
-        }
-
-        .side-heading {
-            transform: rotate(0deg);
-            position: relative;
-            // padding-top: 20px;
-        }
-
-        .footer {
-            position: absolute;
-            padding: 50px 25px;
-            vertical-align: middle;
-            text-align: center;
-        }
-
-        .footer-link {
-            padding-top: 35px;
-            line-height: 25px;
-        }
-
-        .button {
-            max-width: 90%;
-        }
-    }
