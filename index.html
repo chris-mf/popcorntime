@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Popcorntime</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1.0">
+  <!--Place favicon.ico and apple-touch-icon.png in the root directory-->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="/js/viewportchecker.min.js"></script>
+  <link rel="stylesheet" href="responsive-nav.css">
+  <script src="responsive-nav.js"></script>
+</head>
+
+<body>
+
+  <!-- nav -->
+
+  <header>
+    <div class="wrapper">
+
+
+    </div>
+    <div class="normal-section">
+      <a id="nav-burger" class="nav-burger"><img src="img/Hambuger.svg" /></a>
+      <img src="img/popcorn-logo-white.svg" alt="Popcorntime logo">
+      <nav id="main-nav">
+        <a href="#current-flavour" class="nav-text underline-reveal">Current flavour</a>
+        <a href="#how-to-request" class="nav-text underline-reveal ">How to request</a>
+        <a href="#request-flavour" class="nav-button hvr-grow">Request a flavour</a>
+        <img class="close-button" src="img/Close-button.svg" alt="close-button"/></a>
+      </nav>
+    </div>
+    </div>
+  </header>
+
+
+
+  <!-- This is the header section  -->
+
+  <!-- <div class="hero-text animated hero-text-slide-up show"> -->
+
+  <section class="hero">
+    <div class="wrapper">
+      <div class="normal-section header">
+        <div class="hero-text">
+          <h4>time to make some</h4>
+          <h1>Popcorn</h1>
+        </div>
+      </div>
+      <img class="popcorn-illustration" src="img/popcorn-illustration.svg" alt="popcorn-illustration" />
+      <a href="#current-flavour" class="down-arrow"><img src="img/down-arrow.svg" alt="down arrow"></a>
+    </div>
+  </section>
+
+
+  <!-- Current flavour section -->
+
+  <section id="current-flavour" class="current-flavour">
+    <div class="wrapper">
+      <div class="box-section animate animated--slide-up">
+        <div class="heading-container">
+          <div class="side-heading">Current flavour</div>
+        </div>
+        <div class="flavour-information">
+          <div class="flavour-image">
+            <img src="img/Alex_Mac_Image.svg" alt="alex macadamia nut"/>
+          </div>
+          <div class="flavour-text">
+            <h2>The Marcel</h2>
+            <img class="stars-image" src="img/stars.svg" alt="stars">
+            <p class="paragraph">Cherry-flavored glazed popcorn makes a sweet crunchy treat for special occasion.</p>
+            <div class="ingredients-image-section">
+              <div class="ingredients-title">Ingredients</div>
+              <div class="ingredients-wrapper">
+                <img src="img/ingredient-1.svg" alt="ingredient-1" />
+                <div class="ingredients-name">Salt</div>
+              </div>
+              <div class="ingredients-wrapper"><img src="img/ingredient-2.svg" alt="ingredient-2" />
+                <div class="ingredients-name">Cherrys</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- How to request -->
+
+  <section id="how-to-request" class="how-to-request">
+    <div class="wrapper">
+
+      <div class="normal-section animate animated--slide-up">
+
+        <div class="heading-container">
+          <div class="side-heading white-heading">How to request</div>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <img src="img/step1.svg" alt="step1" />
+            <div class="caption">Request a flavour</div>
+
+            <div class="step-number">
+              1
+            </div>
+          </div>
+          <div class="step">
+            <img src="img/step2.svg" alt="step2" />
+            <div class="caption">Best flavour wins</div>
+            <div class="step-number">
+              2
+            </div>
+          </div>
+          <div class="step">
+            <img src="img/step3.svg" alt="step3" />
+            <div class="caption">Popcorn at next book club</div>
+            <div class="step-number">
+              3
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Request a flavour form -->
+
+  <section id="request-flavour" class="request-flavour">
+    <div class="wrapper">
+      <div class="box-section animate animated--slide-up">
+        <div class="heading-container">
+          <div class="side-heading">How to request</div>
+        </div>
+        <div class="form-wrapper">
+          <form id="contact-form" action="https://formspree.io/chris@mentallyfriendly.com" method="POST">
+            <label>Your name</label>
+            <input type="text" name="your-name" placeholder="name here" required></imput>
+            <label>Flavour title</label>
+            <input type="text" name="Flavour-title" placeholder="make it cool" required />
+            <label>List of ingredients</label>
+            <textarea type="text" name="ingredient-list" placeholder="salt, chilli etc" rows="10" required></textarea>
+            <div class="center">
+              <button type="submit" class="button hvr-grow" value="Send">request</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- footer section -->
+  <section id="footer-section" class="footer-section">
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer-text" </div>
+          MF Lab Project
+          <a href="http://beta.mentallyfriendly.com/" class="footer-link" target="_blank">Made with 💕 by your friends at Mentally Friendly</a>
+        </div>
+    </footer>
+  </section>
+
+  <!-- Javscript -->
+  <script src="js/app.js"></script>
+</body>
