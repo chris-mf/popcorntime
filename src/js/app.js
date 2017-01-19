@@ -1,35 +1,28 @@
 'use strict';
 
 
-// mobile menu
+
+
+
+// Smooth Scrolling
 
 $(function() {
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        $("nav").hide()
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 700);
+        return false;
+      }
     }
-
-    $('#nav-toggle').click(function() {
-            $("nav").fadeToggle()
-        })
-
-
-
-//Smooth Srolling
-
-
-    $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: target.offset().top
-                }, 700);
-                return false;
-            }
-        }
-    });
+  });
 });
+
+
+
 
 
 // Error states for form
@@ -98,3 +91,33 @@ $contactForm.submit(function(e) {
         }
     });
 });
+
+
+
+//  // Pauls mobile menu
+//
+// $(function() {
+//     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+//         $("nav").hide()
+//     }
+//
+//     $('#nav-toggle').click(function() {
+//             $("nav").fadeToggle()
+//         })
+//
+//
+//
+//
+//     $('a[href*=#]:not([href=#])').click(function() {
+//         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+//             var target = $(this.hash);
+//             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+//             if (target.length) {
+//                 $('html,body').animate({
+//                     scrollTop: target.offset().top
+//                 }, 700);
+//                 return false;
+//             }
+//         }
+//     });
+// });

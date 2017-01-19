@@ -8,7 +8,9 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script  type="text/javascript" src="/js/viewportchecker.min.js"></script>
+  <script type="text/javascript" src="/js/viewportchecker.min.js"></script>
+  <link rel="stylesheet" href="responsive-nav.css">
+  <script src="responsive-nav.js"></script>
 </head>
 
 <body>
@@ -20,17 +22,17 @@
 
 
     </div>
-    <div class="normal-section header-nav">
+    <div class="normal-section">
       <img src="img/popcorn-logo-white.svg" alt="Popcorntime logo">
-      <a href="#" id="nav-toggle"><img src="img/Hambuger.svg" </a>
-        <nav>
-          <a href="#current-flavour" class="nav-text underline-reveal">current Flavour</a>
-          <a href="#how-to-request" class="nav-text underline-reveal ">how to request</a>
-          <a href="#request-flavour" class="nav-button hvr-grow">request a Flavour</a>
-        </nav>
+      <nav>
+        <a href="#current-flavour" class="nav-text underline-reveal">Current flavour</a>
+        <a href="#how-to-request" class="nav-text underline-reveal ">How to request</a>
+        <a href="#request-flavour" class="nav-button hvr-grow">Request a flavour</a>
+      </nav>
     </div>
     </div>
   </header>
+
 
 
   <!-- This is the header section  -->
@@ -46,7 +48,7 @@
         </div>
       </div>
       <img class="popcorn-illustration" src="img/popcorn-illustration.svg" alt="popcorn-illustration" />
-      <a href="#current-flavour" class="down-arrow hvr-scale-up"><img src="img/down-arrow.svg" alt="down arrow"></a>
+      <a href="#current-flavour" class="down-arrow"><img src="img/down-arrow.svg" alt="down arrow"></a>
     </div>
   </section>
 
@@ -54,22 +56,19 @@
   <!-- Current flavour section -->
 
   <section id="current-flavour" class="current-flavour">
-
     <div class="wrapper">
       <div class="box-section animate animated--slide-up">
-
         <div class="heading-container">
           <div class="side-heading">Current flavour</div>
         </div>
-
         <div class="flavour-information">
           <div class="flavour-image">
-            <img src="img/Alex_Mac_Image.svg" alt="alex macadamia nut">
+            <img src="img/Alex_Mac_Image.svg" alt="alex macadamia nut"/>
           </div>
           <div class="flavour-text">
             <h2>The Marcel</h2>
             <img class="stars-image" src="img/stars.svg" alt="stars">
-            <p>A rarely made black raspberry popcorn with mouthwatering chocolate covered almonds.</p>
+            <p class="paragraph">Cherry-flavored glazed popcorn makes a sweet crunchy treat for special occasion.</p>
             <div class="ingredients-image-section">
               <div class="ingredients-title">Ingredients</div>
               <div class="ingredients-wrapper">
@@ -80,13 +79,10 @@
                 <div class="ingredients-name">Cherrys</div>
               </div>
             </div>
-
           </div>
         </div>
-
       </div>
     </div>
-
   </section>
 
 
@@ -161,7 +157,7 @@
 
 
   <!-- footer section -->
-  <section id="footer-section" class="footer-section animate animated--slide-up">
+  <section id="footer-section" class="footer-section">
     <footer class="footer">
       <div class="wrapper">
         <div class="footer-text" </div>
