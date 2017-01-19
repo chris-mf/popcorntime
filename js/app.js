@@ -90,23 +90,23 @@ $contactForm.submit(function(e) {
         method: 'POST',
         data: $(this).serialize(),
         dataType: 'json',
-        beforeSend: function() {
-            $("#contact-form .button").html("popping corn")
-        },
-        success: function(data) {
-            $("#contact-form .button").html("request sent");
-            setTimeout(function() {
-                $contactForm.trigger("reset");
-                $("#contact-form .button").html("request");
-            }, 2000);
-
-        },
-
-
-        error: function(err) {
-            $contactForm.find('.alert--loading').hide();
-            $contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
-        }
+        // beforeSend: function() {
+        //     $("#contact-form .button").html("popping corn")
+        // },
+        // success: function(data) {
+        //     $("#contact-form .button").html("request sent");
+        //     setTimeout(function() {
+        //         $contactForm.trigger("reset");
+        //         $("#contact-form .button").html("request");
+        //     }, 2000);
+        //
+        // },
+        //
+        //
+        // error: function(err) {
+        //     $contactForm.find('.alert--loading').hide();
+        //     $contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+        // }
     });
 });
 
