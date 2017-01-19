@@ -691,17 +691,25 @@ footer a:hover {
 
     .hero-text h1 {
         font-size: 55px;
+        // transform: translateY(-50%);
     }
 
     .box-section,
     .normal-section {
-        padding: 50px;
+        padding: 20px;
+        height: 80%;
+        // transform: translateY();
+
     }
 
     .hero {
-        height: 400px;
+        height: 300px;
         padding-top: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 80%;
+    }
+
+    .down-arrow {
+      transform: translateY(1300%);
     }
 
     .flavour-text {
