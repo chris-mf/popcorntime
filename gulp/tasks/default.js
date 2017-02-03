@@ -16,8 +16,11 @@ var scsslint           = require('gulp-scss-lint');
 var size               = require('gulp-size');
 var runSequence        = require('run-sequence');
 var plumber            = require('gulp-plumber');
+var ghPages            = require('gulp-gh-pages');
 
 var config             = require('../config');
+
+
 
 // Delete
 gulp.task('delete', function(cb) {
@@ -81,7 +84,7 @@ gulp.task('images', function() {
 });
 
 // Static files
-gulp.task('copy:files', ['copy:fonts', 'copy:videos', 'copy:html']);
+gulp.task('copy:files', ['copy:fonts', 'copy:videos', 'copy:html', 'copy:other']);
 
   gulp.task('copy:fonts', function() {
     return gulp.src(config.copyfiles.fonts.src)
@@ -96,6 +99,11 @@ gulp.task('copy:files', ['copy:fonts', 'copy:videos', 'copy:html']);
   gulp.task('copy:html', function() {
     return gulp.src(config.copyfiles.html.src)
       .pipe(gulp.dest(config.copyfiles.html.dest));
+  });
+
+  gulp.task('copy:other', function() {
+    return gulp.src(config.copyfiles.other.src)
+      .pipe(gulp.dest(config.copyfiles.other.dest));
   });
 
 // Build
@@ -130,4 +138,11 @@ gulp.task("default", ["watch"]);
 //clear cache
 gulp.task('clear', function (done) {
   return cache.clearAll(done);
+});
+
+// gh pages deploy
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
 });

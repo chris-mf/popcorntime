@@ -75,7 +75,8 @@ Sync
 #how to view on Mobile
 10.1.0.48:8888
 
-
-
 #how to find em
 number/16
+
+Gulp build
+Gulp deploy 

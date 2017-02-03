@@ -51,7 +51,7 @@ $(document).on("ready", function() {
     $('#nav-burger').on('click', function(e){
       e.preventDefault();
       e.stopPropagation();
-      console.log('burger clicked!');
+    //   console.log('burger clicked!');
       $('#main-nav').addClass('open');
     });
 
@@ -60,7 +60,7 @@ $(document).on("ready", function() {
     // });
 
     $('body').on('click', function(){
-      console.log('menu closed');
+    //   console.log('menu closed');
       $('#main-nav').removeClass('open');
     });
 })

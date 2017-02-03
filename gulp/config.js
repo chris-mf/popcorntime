@@ -56,6 +56,10 @@ module.exports = {
     html: {
       src: src + '/**/*.html',
       dest: dist
+    },
+    other: {
+      src: src + '/**/*',
+      dest: dist
     }
   },
   watch: {
