@@ -29,21 +29,21 @@ $(function() {
 
 // Error states for form
 
-document.addEventListener("DOMContentLoaded", function() {
-
+// document.addEventListener("DOMContentLoaded", function() {
+console.log("here")
     var elements = document.getElementsByTagName("INPUT");
     for (var i = 0; i < elements.length; i++) {
         elements[i].oninvalid = function(e) {
             e.target.setCustomValidity("");
             if (!e.target.validity.valid) {
-                e.target.setCustomValidity("This field cannot be left blank");
+                e.target.setCustomValidity("Hey, I need this!");
             }
         };
         elements[i].oninput = function(e) {
             e.target.setCustomValidity("");
         };
     }
-})
+// })
 
 $(document).on("ready", function() {
     $(".hero-text").addClass("bounceInDown");
