@@ -1,0 +1,21 @@
+{
+  "name": "better-popover-plugin",
+  "version": "0.5.2",
+  "main": [
+    "dist/better-popover-plugin.js"
+  ],
+  "ignore": [
+    ".*",
+    "test",
+    "src",
+    "index.html",
+    "package.json",
+    "bower.json"
+  ],
+  "keywords": [
+    "better-dom"
+  ],
+  "dependencies": {
+    "better-dom": "^2.1.0"
+  }
+}

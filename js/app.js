@@ -105,7 +105,8 @@ $contactForm.submit(function(e) {
 
         error: function(err) {
             $contactForm.find('.alert--loading').hide();
-            $contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+            // $contactForm.find('.alert--error').remove();
+            // $contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
         }
     });
 });
